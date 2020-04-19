@@ -229,4 +229,9 @@ static inline void EVP_PKEY_assign_wrapper(EVP_PKEY *pkey, RSA *rsakey) {
 
 	EVP_PKEY_assign(pkey, EVP_PKEY_RSA, rsakey);
 }
+
+static inline EVP_PKEY * EVP_PKEY_new_wrapper() {
+
+	return EVP_PKEY_new();
+}
 #endif
